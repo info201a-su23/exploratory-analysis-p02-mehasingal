@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 
 # Read the data
-data <- read.csv("maryland_crash_report.cvs")
+data <- read.csv("maryland_crash_report.csv")
 
 # Filter to include only the top 10 most common makes
 top_makes <- data %>%
