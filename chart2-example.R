@@ -31,7 +31,7 @@ vehicle_injury_scatterplot <- ggplot(filtered_data, aes(x = Vehicle.Make, y = In
   labs(title = "Relationship between Vehicle Make and Injury Severity",
        x = "Vehicle Make",
        y = "Injury Severity") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 # Print the scatterplot
 print(vehicle_injury_scatterplot)
