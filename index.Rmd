@@ -5,50 +5,96 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Car Crash Data in Maryland
 
 ### Authors
 
-Names of your team members
+Jessica Wang: jesssjw@uw.edu Meha Singal: msinga@uw.edu Sunwoo Kim: skim127@uw.edu ChuFeng Wang: chufew@uw.edu
 
 ### Date
 
-Winter 2022
+08/03/2023
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our primary question is: "What are the main factors contributing to automobile accidents in Maryland?". Understanding these factors is important and crucial because they can guide policies to enhance road safety. To address this question, we will utilize an extensive dataset from the Maryland State Police's Automated Crash Reporting System (ACRS), which will help us identify and analyze these factors.
+
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Road Safety, Automobile Accidents, Crash Factors Analysis, ACRS.
 
 ### Introduction  
 
 Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
 
+Our project will be focusing on automobile accidents in the state of Maryland. We want to effectively analyze the contributing factors, conditions, and patterns that lead to traffic collisions on county and local roadways. This data set includes characteristics of accidents reported by callers/police such as date, weather, surface condition, (driver) substance abuse, injury severity, distraction, speed limit, and vehicle model and make; all of which will help us formulate important research questions. Some of these questions include:
+
+What are the main contributing factors to automobile accidents in Maryland, and how do they vary across different counties and local roadways?
+How does weather impact the frequency and severity of traffic collisions, and are there specific weather conditions that pose a higher risk?
+Are there any notable patterns or correlations between the vehicle model and make and the severity of accidents, and could certain vehicle types be associated with higher risk?
+Was there an increase in automobile accidents in relation to driver substance abuse and/or age of drivers after the pandemic?
+The motivation behind these questions is to gain a comprehensive understanding of the conditions and circumstances that lead to automobile accidents in Maryland. Analyzing this data and finding patterns can help lawmakers and law enforcement agencies better strategize ways to enhance road safety through education and intervention.
+
 ### Related Work  
 
 Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
 
+Car crashes are a significant public safety concern that must be addressed with more than 5 million car accidents reported yearly in the US by the Centers for Disease Control and Prevention (CDC). According to Forbes, the statistics for car fatalities in 2020 alone, was a total of 35,766 fatal car accidents across the United States. Understanding the factors and causes that contribute to these many accidents is key to improving road safety and prevention of fatalities. A law blog from the Pinder Legal team in Maryland states that car accidents are actually often preventable if every driver made a conscious effort to abide by all traffic regulations and laws. As a result every driver needs to understand the top 5 causes of traffic accidents in Maryland, which are distracted driving, speeding, drunk driving, tailgating, and fatigue that are all avoidable with proper care for everyone safety. Meaning that the huge number of fatal accidents yearly can be reduced and saved.
+
+Maryland with a high population density and extensive road maps, have a substantial amount of car crashes each year. Analyzing this data set from the Maryland, Mountgomery County can provide us with valuable insight into the locations, demographics, and root problems that cause to occur these car incidents.
+
+Causes of traffic accidents in Maryland: Pinder Plotkin. Pinder Plotkin LLC. (2023, May 10). https://www.pinderplotkin.com/major-causes-traffic-accidents-in-maryland/
+
+Centers for Disease Control and Prevention. (n.d.). Motor vehicle crash deaths. Centers for Disease Control and Prevention. https://www.cdc.gov/vitalsigns/motor-vehicle-safety/index.html
+
+Christy Bieber, J. D. (2023, July 18). Car accident statistics for 2023. Forbes. https://www.forbes.com/advisor/legal/car-accident-statistics/
+
 ### The Dataset
 
 Where did you find the data? Please include a link to the data source  
+
+We found the data in data.gov database. Here is a link to our data source: https://catalog.data.gov/dataset/crash-reporting-drivers-data
+
 Who collected the data?  
+
+The Maryland State police collected the data through the ARCS.
+
 How was the data collected or generated?  
+
+The crashes were collected through the Automated Crash Reporting System (ACRS) of the Maryland State Police. It was reported by the Montgomery County Police, Gaithersburg Police, Rockville Police, and the Maryland-National Capital Park Police based on preliminary information supplied to the Police Department by the reporting parties.
+
 Why was the data collected?  
+
+This data was collected with the intent for public access and use. It conveys important information about the characteristics and frequencies of car incidents in their community.
+
 How many observations (rows) are in your data?  
+
+There are 162992 observations (rows) in our data.
+
 How many features (columns) are in the data?  
+
+There are 43 features (columns) in the data.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+
+There are ethical questions concerning fairness, accuracy, and privacy of this data. Since the reporting parties of the incidents are supplying this information, certain details may be skewed, inaccurate, and not verified as those involved may be emotional, injured, or biased towards a certain cause at fault.
+These reports are also only reflective of preliminary crash information that may/may not be updated based on further investigations, as well as mechanical and human error. This data is also available for the public and it's concerning if people want their car crash information out in the public.
+
 What are possible limitations or problems with this data?   (at least 200 words)
+
+Possible limitations with this data is that it only provides car incidents in the state of Maryland so it cannot be generalized for all of the United States of America. There's also no context leading up to the incident so we cannot categorize if maybe some incidents are due to fatigue and others are due to alcohol, etc. Additionally, we can not categorize if the car crash is a fatal/serious one or just a minor one like a rear end. Since the dataset is so large, I think it is important to know the extend of the damage so it does not seem like Maryland just has a lot of fatal car crashes. There could also be underreporting as the crashes are reported into an online system, which sometimes a minor crash may not be reported as sometimes people don't always get the police involved and resolve it between themselves. There could potentially be data quality issues sense there are those specific 43 features listed, maybe some crashes need more information and could have a not detailed enough report if the crash was more serious. There could potentially be human error when recording this data since it is the police who are recording the crashes into the ACRS and they could potentially input their data wrong, resulting in potential skews, or outliers in the data.
 
 ### Implications
 
 Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
 
+There is a significant amount of implications for technologists, designers, and policymakers that can guide them in efforts to improve upon the findings of this analysis in relation to the prevention of automobile accidents in Maryland. Technologists and designers can lead insights into common types of accidents and how they can improve safety technologies and systems based on those findings. This data can also help designers come to decisions about optimal vehicle designs and models that can withstand conditions that could lead to a fatal accident. Policymakers and lawmakers carry some of the bigger implications based on this data, as these findings are a direct reflection of possible flaws in infrastructure, road signs, and law enforcement presence in areas most at risk for accidents. They can also lead educational public awareness campaigns about road safety and the dangers of distracted driving, as well as better budget allocation and policy interventions for things like speed limits and penalties for certain driving behaviors.
+
 ### Limitations & Challenges
 What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+A challenge we might need to address is the how much data we have available. The data we have only records car crashes in the state of Maryland. With this information in mind, we can not generalize the data or conclusions we come to and say it applies to all of America as the data collected can only represent the state of Maryland. Another challenge we might to consider are external factors or context that might influence the data. The car accident could be influenced by external factors such as poor weather such as snowstorms or the COVID pandemic, both of which could increase the likelihood of an crash occurring or make the accident more severe. Additionally, another challenge could be if the conclusions or trends we discover with this data could be applied to future situations such as can we predict if the number of accidents is going to increase or if the number of accidents in a specific area occurs the most and if we can resolve/decrease the amount of crashes in that location.
 
 ### Summary Information
 
@@ -70,6 +116,9 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
+
+What are the main contributing factors to automobile accidents in Maryland? That's the question I was trying to analyze through the chart above. Since this question could be approached in multiple ways, I decided to analyze the collision types. I chose a bar graph as the visualization because it's easy to compare and contrast the different reasons for these accidents. The taller the bar the greater it occurs. We see that same direction rear end occurs the most out of all types of collision types and ones such as opposite direction both left turn are one of the least to occur. With this information in mind, drivers can be more aware of same direction rear end occurring the most frequent and try their best to be careful when driving to avoid such incident.
+
 
 ### Chart 2
 
