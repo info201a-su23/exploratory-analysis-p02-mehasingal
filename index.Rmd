@@ -115,6 +115,7 @@ Describe why you chose this chart and what information it reveals
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ```{r, echo = FALSE, code = readLines("chart1_example.R")}
+
 ```
 
 What are the main contributing factors to automobile accidents in Maryland? That's the question I was trying to analyze through the chart above. Since this question could be approached in multiple ways, I decided to analyze the collision types. I chose a bar graph as the visualization because it's easy to compare and contrast the different reasons for these accidents. The taller the bar the greater it occurs. We see that same direction rear end occurs the most out of all types of collision types and ones such as opposite direction both left turn are one of the least to occur. With this information in mind, drivers can be more aware of same direction rear end occurring the most frequent and try their best to be careful when driving to avoid such incident.
