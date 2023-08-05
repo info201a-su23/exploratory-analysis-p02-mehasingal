@@ -114,8 +114,12 @@ The 5 values that I calculated were aimed towards the conditions and factors tha
 
 ### Table
 
+<<<<<<< HEAD
 ```{r, echo = FALSE, code = readLines("Table.R")}
 
+=======
+```{r, echo = FALSE, code = readlines("Table.R")}
+>>>>>>> 536d5fcc6d1f46ec913d568d9aa72a87edec180d
 ```
 <<<<<<< HEAD
 
