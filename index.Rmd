@@ -102,26 +102,18 @@ A challenge we might need to address is the how much data we have available. The
 ```{r, echo = FALSE, code = readLines("Summary.R")}
 
 ```
-<<<<<<< HEAD
 
 The 5 values that I calculated were `summary_crash$route_crash`,
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 =======
 The 5 values that I calculated were aimed towards the conditions and factors that may attribute to car collisions the most. The first value was finding which road routes in the Montgomery County had the most collisions and the vehicle direction it was going for the safety of people which was the`summary_crash$route_crash`. The next was finding which weather and surface road conditions that go in-hand people should avoid taking for the most collisions was the `summary_crashes$weather_crash`. Our third find was finding out which car models people should avoid with the most reported number of fatal injury collisions was the`summary_crashes$model_crash`. Our fourth finding was which collisions are most often during the day when most people drive was `summary_crashes$collision_crash`.And lastly, if the circumstances were to come to a collusion, the vehicle body we found to receive the most damage were  `summary_crashes$dmg_crash`. In conclusion, the 5 values I found can be valuable information for people to become aware of and make safe decisions.
 
->>>>>>> e3b25cfca2b3792f62f4cd7fbf4e5387b179ae1f
-
-
 ### Table
 
-<<<<<<< HEAD
+
 ```{r, echo = FALSE, code = readLines("Table.R")}
 
-=======
-```{r, echo = FALSE, code = readlines("Table.R")}
->>>>>>> 536d5fcc6d1f46ec913d568d9aa72a87edec180d
 ```
-<<<<<<< HEAD
 
 
 Describe why you included the table and what information it reveals
