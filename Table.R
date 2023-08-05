@@ -3,7 +3,7 @@ library(dplyr)
 library(knitr)
 
 
-mcrash_data <- read.csv("/Users/stlp/Documents/INFO201/exploratory-analysis-p02-mehasingal/maryland_crash_report.csv")
+mcrash_data <- read.csv("maryland_crash_report.csv")
 
 sort1_chart <- mcrash_data %>%
   group_by(Vehicle.Make) %>%
@@ -17,5 +17,7 @@ sort1_chart <- mcrash_data %>%
   arrange(desc(total_collisions)) %>%
   head(10)
 
-kable(sort1_chart, col.names = c("Vehicle Make", "Total Collisions", "Fatal Injuries", "Driver Faults", "Not Driver Faults", "Unknown Fault"))
+table <- kable(sort1_chart, col.names = c("Vehicle Make", "Total Collisions", "Fatal Injuries", "Driver Faults", "Not Driver Faults", "Unknown Fault"))
+
+print(table)
 

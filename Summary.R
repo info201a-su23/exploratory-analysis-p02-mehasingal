@@ -2,7 +2,7 @@ library(ggplot2)
 library(dplyr)
 library(stringr)
 
-mcrash_data <- read.csv("/Users/stlp/Documents/INFO201/exploratory-analysis-p02-mehasingal/maryland_crash_report.csv")
+mcrash_data <- read.csv("maryland_crash_report.csv")
 
 summary_crashes <- list()
 
@@ -13,7 +13,7 @@ summary_crashes$route_crash <- mcrash_data %>%
   arrange(desc(report_num)) %>%
   filter(report_num == max(report_num, na.rm = TRUE))
 
-#print(summary_crashes$route_crash)
+print(summary_crashes$route_crash)
 
 
 #What weather condition and road surface condition are most prominent in collision crashes?
@@ -24,7 +24,7 @@ summary_crashes$weather_crash <- mcrash_data %>%
   arrange(desc(report_num)) %>%
   filter(report_num == max(report_num, na.rm = TRUE))
 
-#print(summary_crashes$weather_crash)
+print(summary_crashes$weather_crash)
 
 
 
@@ -37,7 +37,7 @@ summary_crashes$model_crash <- mcrash_data %>%
   arrange(desc(report_num)) %>%
   filter(report_num == max(report_num, na.rm = TRUE))
 
-#print(summary_crashes$model_crash)
+print(summary_crashes$model_crash)
 
 
 #What are the most often types of collision during the daylight?
@@ -49,9 +49,7 @@ summary_crashes$collision_crash <- mcrash_data %>%
   arrange(desc(report_num)) %>%
   filter(report_num == max(report_num, na.rm = TRUE))
 
-#print(summary_crashes$collision_crash)
-
-
+print(summary_crashes$collision_crash)
 
 
 #Which vehicle body type receive the most vehicle damage extent in crashes?
@@ -63,5 +61,5 @@ summary_crashes$dmg_crash <- mcrash_data %>%
   arrange(desc(report_num)) %>%
   filter(report_num == max(report_num, na.rm = TRUE))
 
-#print(summary_crashes$dmg_crash)
+print(summary_crashes$dmg_crash)
 
