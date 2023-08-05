@@ -99,10 +99,6 @@ A challenge we might need to address is the how much data we have available. The
 
 ### Summary Information
 
-```{r, echo = FALSE, code = readLines("Summary.R")}
-
-```
-
 The 5 values that I calculated were `summary_crash$route_crash`,
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 =======
