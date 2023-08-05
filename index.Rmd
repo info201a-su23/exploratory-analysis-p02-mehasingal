@@ -127,8 +127,9 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, code = readLines("chart2_example.R")}
 
+```
 
 A jitter plot was chosen to visualize the relationship between vehicle make and injury severity  in the Maryland crash report data. This plot handles overlapping points by adding slight variations to the x-values, allowing for a clear view of the distribution. It reveals patterns, outliers, and potential trends in injury severity across the top 10 vehicle makes. By comparing the spread of points for each make, you can assess differences in injury severity across makes, identifying if certain brands are associated with more or less severe injuries.
 ### Chart 3
