@@ -5,7 +5,7 @@ output: html_document
 
 ## Project title
 
-Car Crash Data in Maryland
+Analysis of Traffic Collisions in Maryland
 
 ### Authors
 
@@ -30,10 +30,11 @@ Briefly introduce your project.  Include 3-5 research questions. What motivates 
 
 Our project will be focusing on automobile accidents in the state of Maryland. We want to effectively analyze the contributing factors, conditions, and patterns that lead to traffic collisions on county and local roadways. This data set includes characteristics of accidents reported by callers/police such as date, weather, surface condition, (driver) substance abuse, injury severity, distraction, speed limit, and vehicle model and make; all of which will help us formulate important research questions. Some of these questions include:
 
-What are the main contributing factors to automobile accidents in Maryland, and how do they vary across different counties and local roadways?
-How does weather impact the frequency and severity of traffic collisions, and are there specific weather conditions that pose a higher risk?
-Are there any notable patterns or correlations between the vehicle model and make and the severity of accidents, and could certain vehicle types be associated with higher risk?
-Was there an increase in automobile accidents in relation to driver substance abuse and/or age of drivers after the pandemic?
+1. What are the main contributing factors to automobile accidents in Maryland, and how do they vary across different counties and local roadways?
+2. How does weather impact the frequency and severity of traffic collisions, and are there specific weather conditions that pose a higher risk?
+3. Are there any notable patterns or correlations between the vehicle model and make and the severity of accidents, and could certain vehicle types be associated with higher risk?
+4. Was there an increase in automobile accidents in relation to driver substance abuse after the pandemic?
+
 The motivation behind these questions is to gain a comprehensive understanding of the conditions and circumstances that lead to automobile accidents in Maryland. Analyzing this data and finding patterns can help lawmakers and law enforcement agencies better strategize ways to enhance road safety through education and intervention.
 
 ### Related Work  
@@ -127,12 +128,20 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, code = readLines("chart2-example.R")}
 
+```
 
 A jitter plot was chosen to visualize the relationship between vehicle make and injury severity  in the Maryland crash report data. This plot handles overlapping points by adding slight variations to the x-values, allowing for a clear view of the distribution. It reveals patterns, outliers, and potential trends in injury severity across the top 10 vehicle makes. By comparing the spread of points for each make, you can assess differences in injury severity across makes, identifying if certain brands are associated with more or less severe injuries.
+
 ### Chart 3
 
 Include a chart
 
+```{r, echo = FALSE, code = readLines("chart3_example.R")}
+
+```
+
 Describe why you chose this chart and what information it reveals
+
+The question that we wanted to analyze for this chart was whether there was an increase in driver substance abuse causing accidents after the COVID-19 pandemic. Some law enforcement agencies and governments have noticed an increase in DUIs and cases of drunk driving accidents after the pandemic; so we wanted to see if this Maryland-specific data could potentially corroborate that fairly new generalization. While originally we created a bar plot of counts for each date an alcohol-contributed crash occurred between 2015-2023, the graph was unable to print correctly to HTML and appeared too crowded. So, to fix this we just broadened the groups to be just the year, rather than exact date, to observe the trend of crashes. Using a bar plot of counts of "Alcohol Contributed" accidents from 2015-2023, we can see an apparent downward trend of crashes, with the lowest "spike" occurring in 2020, the start of the pandemic, with around 140 alcohol-contributed crashes occurring that year, with a slight increase in 2021 and 2022, but still less than years prior to 2020. Many theories can come from this graph, mostly related to the effect of the pandemic on the number of drivers on Maryland roads, whether it be an overall decrease in drivers (due to remote work or population changes) or perhaps the opposite of the original theory, and that more people are taking drunk driving much more seriously than pre-pandemic times. 
