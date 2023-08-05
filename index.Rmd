@@ -97,13 +97,18 @@ What challenges or limitations might you need to address with your project idea 
 A challenge we might need to address is the how much data we have available. The data we have only records car crashes in the state of Maryland. With this information in mind, we can not generalize the data or conclusions we come to and say it applies to all of America as the data collected can only represent the state of Maryland. Another challenge we might to consider are external factors or context that might influence the data. The car accident could be influenced by external factors such as poor weather such as snowstorms or the COVID pandemic, both of which could increase the likelihood of an crash occurring or make the accident more severe. Additionally, another challenge could be if the conclusions or trends we discover with this data could be applied to future situations such as can we predict if the number of accidents is going to increase or if the number of accidents in a specific area occurs the most and if we can resolve/decrease the amount of crashes in that location.
 
 ### Summary Information
-
+```{r setup, include = FALSE}
+source("Summary.R")
+library("dplyr")
+library("knitr")
+```
+The 5 values that I calculated were `summary_crash$route_crash`,
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
 ### Table
 
-Include a table of aggregate information
-
+```{r, echo = FALSE, message = FALSE, code = readlines("Table.R")}
+```
 Describe why you included the table and what information it reveals
 
 ### Chart 1
