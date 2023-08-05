@@ -10,12 +10,12 @@ sort1_chart <- mcrash_data %>%
   summarise(
     total_collisions = n(),
     fatal_injuries = sum(Injury.Severity == "FATAL INJURY"),
-    no_injuries = sum(Injury.Severity == "NO APPARENT INJURY"),
     driver_faults = sum(Driver.At.Fault == "Yes"),
     not_driver_faults = sum(Driver.At.Fault == "No"),
     unknown = sum(Driver.At.Fault == "Unknown")
   ) %>%
-  arrange(desc(total_collisions)) 
+  arrange(desc(total_collisions)) %>%
+  head(10)
 
-kable(sort1_chart, col.names = c("Vehicle Make", "Total Collisions", "Fatal Injuries", "No Injuries", "Driver Faults", "Not Driver Faults", "Unknown Fault"))
+kable(sort1_chart, col.names = c("Vehicle Make", "Total Collisions", "Fatal Injuries", "Driver Faults", "Not Driver Faults", "Unknown Fault"))
 
